@@ -1,0 +1,160 @@
+/* PAGINA DE MENU */
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Bengali:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --letrasparaheader: "Chau Philomene One", serif;
+    --tamaletra: 1.5rem;
+    --letrasparrafos: "Noto Serif Bengali", serif;
+    --tamparra: 1.2rem;
+    --letramenu: "DM Sans", serif;
+    --tamprecio: 32px;
+    --letraparapromo: "Noto Serif Bengali", serif;
+    --colorletra: #f5f5fd
+}
+.contenedor-productos {
+    display: grid; /* Activamos el grid */
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas con el mismo ancho */
+    gap: .2rem; /* Espacio entre los productos */
+    padding: .2rem; 
+    margin-bottom: 2%; 
+}
+
+.Cuadrados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 15px solid #2B2B2B;
+    border-radius: 30px;
+    width: 267.4px;
+    height: 40rem;
+    background-color:#2B2B2B;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    margin: auto;
+    overflow: hidden; 
+    margin-bottom: 20px;
+}
+.Letrasencuadrados{
+    color: #efe9db;
+    text-align: center;
+    font-family: var(--letramenu);
+    font-size: 20.1px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.linecua {
+    width: 100%;            
+    height: 0.2%;           
+    background-color: white;
+    margin: 20% 0;
+
+}
+.precio{
+    color: #efe9db;
+    text-align: center;
+    margin-bottom: 10%;
+    margin-top: -10%;
+    font-size: var(--tamprecio);
+    font-family: var(--letramenu);
+    font-weight: bold;
+}
+
+.imagen-container {
+    position: relative;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenescua {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15%;
+}
+.texto-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: gold;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    width: 80%;
+    text-align: center;
+    font-family: var(--letrasparrafos);
+    font-size: 15px;
+}
+
+.botoncarro{
+    width: 150px;
+    height: 60px;
+    margin-top: 10px;
+    text-align: center;
+    border: 5px solid transparent; 
+    border-radius: 25px;
+    background-color: goldenrod; 
+    background-image: linear-gradient(to left, goldenrod, black); 
+    background-origin: border-box; 
+    background-clip: content-box, border-box;
+    text-decoration: none;
+}
+.botoncarro:hover {
+    background-color: darkgoldenrod; 
+    background-image: linear-gradient(to left, darkgoldenrod, #333); 
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+.textoboton{
+    color: #efe9db;
+    font-size: var(--tamparra);
+    text-align: center;
+    margin-top: 7%;
+    font-family: var(--letramenu);
+    font-weight: bold;
+    text-decoration: none;
+}
+.botoncarro:hover .textoboton {
+    color: gold; 
+}
+.titulosmenu{
+    text-align: center;
+    padding: 0px 0px 20px;
+    font-family: var(--letrasparaheader);
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    color: #c4a36a;
+}
+
+.botones {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+#carritoContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(267.4px, 1fr)); /* Adaptable a más productos */
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+
+#totalCarrito {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #c4a36a; /* Un color que destaque */
+    margin-top: .2rem;
+    padding-top: .2rem;
+}

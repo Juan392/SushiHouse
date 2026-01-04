@@ -1,0 +1,180 @@
+/* PAGINA DE PROMOCIONES */
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Bengali:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --letrasparaheader: "Chau Philomene One", serif;
+    --tamaletra: 1.5rem;
+    --letrasparrafos: "Noto Serif Bengali", serif;
+    --tamparra: 1.2rem;
+    --letramenu: "DM Sans", serif;
+    --tamprecio: 32px;
+    --letraparapromo: "Noto Serif Bengali", serif;
+    --colorletra: #f5f5fd
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #efe9db;
+}
+
+.input {
+    width: 20%;
+    height: 40px;
+    align-self: center;
+    text-align: center;
+    font-family: var(--letrasparaheader);
+    font-size: 30px;
+}
+
+.botonintento {
+    align-self: center;
+    width: 150px;
+    height: 70px;
+    border: 5px solid transparent;
+    border-radius: 25px;
+    background-color: goldenrod;
+    background-image: linear-gradient(to left, goldenrod, black);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    text-decoration: none;
+    color: #efe9db;
+    font-size: var(--tamparra);
+    text-align: center;
+    font-family: var(--letramenu);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botonintento:hover {
+    background-color: darkgoldenrod;
+    background-image: linear-gradient(to left, darkgoldenrod, #333);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: gold;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1000; 
+}
+
+.carta {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: aparecer 0.5s ease-in-out;
+    text-align: center;
+}
+
+.carta.error {
+    border: 2px solid red;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.carta p {
+    font-size: 20px;
+    margin: 0;
+}
+.contenedorrec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+.rectangulos {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    border: 15px solid black;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 950px;
+    height: 156;
+    background-color: black;
+    box-sizing: border-box;
+
+}
+
+.imagenesenrec {
+    width: 20%; 
+    height: 150px;
+    border-radius: 15px;
+    margin-right: 20px; 
+    border: 2px solid white;
+}
+
+.texto-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}
+
+.textoenrec {
+    color: white;
+    font-weight: bold;
+    font-size: 21px;
+    margin-bottom: 10px;
+    font-family: var(--letramenu);
+}
+
+.parrafoenrec {
+    color: white;
+    font-size: 17.8px;
+    margin-bottom: 20px;
+    font-family: var(--letraparapromo);
+}
+.botonre{
+    width: 200px;
+    height: 70px;
+    border: 5px solid transparent;
+    border-radius: 25px;
+    background-color: goldenrod;
+    background-image: linear-gradient(to left, goldenrod, black);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    text-decoration: none;
+    color: #efe9db;
+    font-size: var(--tamparra);
+    text-align: center;
+    font-family: var(--letramenu);
+    font-weight: bold;
+    cursor: pointer;
+}
+.botonre:hover {
+    background-color: darkgoldenrod;
+    background-image: linear-gradient(to left, darkgoldenrod, #333);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: gold;
+}

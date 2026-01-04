@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Bengali:wght@100..900&display=swap');
+/* PAGINA PRINCIPAL Y ESTILOS GENERALES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --letrasparaheader: "Chau Philomene One", serif;
+    --tamaletra: 1.5rem;
+    --letrasparrafos: "Noto Serif Bengali", serif;
+    --tamparra: 1.2rem;
+    --letramenu: "DM Sans", serif;
+    --tamprecio: 32px;
+    --letraparapromo: "Noto Serif Bengali", serif;
+    --colorletra: #f5f5fd
+}
+html, body {
+    height: 100%; /* Asegura que el body y html ocupen el 100% de la altura de la ventana */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-image: url(../assets/piclumen-1739667587238.png);
+    background-size: cover; /* Ajusta el tamaño de la imagen al tamaño de la pantalla */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita la imagen */
+    position: relative; /* Permite posicionar elementos encima del fondo */
+    background-attachment: fixed;
+}
+
+/* Contenedor principal, crece para llenar el espacio disponible */
+.main {
+    flex: 1; /* Esto asegura que la sección principal ocupe todo el espacio disponible */
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.Logoinicio{
+    max-width: 10rem;
+    max-height: 10rem;
+    position: relative; 
+    top: 1rem; 
+    left: 2rem; 
+}
+
+.header{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: .05rem 1rem;
+}
+.nav{
+    display: flex;
+    align-self: center;
+    gap: 7rem;
+}
+ul{
+    list-style: none;
+    margin: 0 10rem;
+}
+button{
+    width: 10rem;
+    height: 5rem;
+    margin-top: 1rem;
+    text-align: center;
+    border: 5px solid transparent; 
+    border-radius: 2rem;
+    background-color: #c4a36a; 
+    background-origin: border-box; 
+    background-clip: content-box, border-box;
+    text-decoration: none;
+}
+.pagi:hover {
+    background-color: darkgoldenrod; 
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.pagi {
+    margin: 0; 
+    padding: .5rem; 
+    position: relative; 
+    top: 1rem; 
+    right: 2rem;
+    color: black;
+    font-family: var(--letrasparaheader);
+    font-weight: 400;
+    font-size: var(--tamaletra);
+}
+
+.perfil{
+    max-width: 10rem;
+    max-height: 10rem;
+    position: relative;
+    top: 1rem; 
+    right: 5rem;
+}
+
+.header-line {
+    width: 25%; 
+    height: .5rem; 
+    background-color: #c4a36a;
+    margin-top: -12.5rem; 
+    align-self: center;
+}
+.main{
+    margin-top: 11%;
+    flex: 1;  
+    display: flex;
+    flex-direction: column;
+}
+.nos{
+    text-align: center;
+    padding: 1.5rem 0;
+    font-family: var(--letrasparaheader);
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--colorletra);
+}
+
+.sub{
+    text-align: center;
+    font-family: var(--letrasparaheader);
+    font-size: var(--tamaletra);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--colorletra);
+}
+.conte{
+    display: flex;
+    justify-content: flex-end;
+}
+.cuadro{
+    border: 1rem solid #2b2b2b;
+    margin-right: 10%;
+    background-color: #2b2b2b;
+    border-radius: 2rem;
+}
+.p1{
+    white-space: pre;
+    text-align: justify;
+    font-weight: 400;
+    font-style: normal;
+    font-family: var(--letrasparrafos);
+    font-size: var(--tamparra);
+    color: var(--colorletra);
+
+}
+.sushienp{
+    width: 35rem;
+    height: 20rem;
+    position: relative;
+    top: -20rem;
+    border-radius: 2rem;
+    align-self: center;
+    margin-right: 48%;
+}
+
+.sub2{
+    font-family: var(--letrasparaheader);
+    font-weight: 400;
+    font-display: normal;
+    font-size: var(--tamaletra);
+    text-align: center;
+    color: var(--colorletra);
+}
+.p2{
+    padding-left: 9%;
+    white-space: pre;
+    margin-top: -1rem;
+    text-align: justify;
+    font-weight: 400;
+    font-style: normal;
+    font-family: var(--letrasparrafos);
+    font-size: var(--tamparra);
+    color:var(--colorletra)
+}
+.cuadrop2{
+    border: 1rem solid #2b2b2b;
+    background-color: #2b2b2b;
+    margin-left: 10rem;
+    width: 37rem;
+    border-radius: 2rem;
+    margin-top: -18rem;
+}
+.cocinero{
+    width: 35rem;
+    height: 20rem;
+    position: relative;
+    top: -13rem;
+    left: 70rem;
+    border-radius: 2rem;
+}
+
+.footerline{
+    width: 25%;
+    height: 0.5rem;
+    background-color: #c4a36a;
+    align-self: center;
+    margin-top: -10rem; /* Empuja hacia abajo si no hay suficiente contenido */
+}
+.footer {
+    width: 100%;
+    background-color: #c4a36a;
+    color: #000;
+    text-align: center;
+    padding: 0.10rem 0.20rem;
+    position: relative;
+    bottom: 0;
+    margin-top: auto; /* Esto asegura que el footer se mantenga en la parte inferior */
+}
+
+.footexto{
+    font-family: var(--letrasparrafos);
+    font-size: var(--tamaletra);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footenlaces {
+    display: flex;
+    justify-content: space-between;
+    gap: .2rem;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.imagenesfoot {
+    width: 7rem;
+    height: 7rem; 
+    object-fit: contain;
+    vertical-align: middle; 
+}
+
+.Logosfoot {
+    width: 378px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px; 
+    text-decoration: none;
+
+    font-weight: 600;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 5px; 
+    color: var(--colorletra);
+}
+.Logosfoot:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+.footerlinemenu{
+    width: 25%; 
+    height: .5rem; 
+    background-color: #c4a36a;
+    align-self: center;
+    margin-top: auto;
+}
+
+.contenedores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+.rectangulosA {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    border: 15px solid #2b2b2b;
+    border-radius: 30px;
+    max-width: 100rem;
+    height: 10rem;
+    background-color: #2b2b2b;
+    box-sizing: border-box;
+    gap: 1rem;
+}
+
+.texto-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}
+
+.textoenrec {
+    color: white;
+    font-weight: bold;
+    font-size: 21px;
+    margin-bottom: 10px;
+    font-family: var(--letramenu);
+}
+
+.parrafoenrec {
+    color: white;
+    font-size: 17.8px;
+    margin-bottom: 20px;
+    font-family: var(--letraparapromo);
+}
+.botonreA{
+    width: 200px;
+    height: 70px;
+    border: 5px solid transparent;
+    border-radius: 25px;
+    background-color: goldenrod;
+    background-image: linear-gradient(to left, goldenrod, black);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    text-decoration: none;
+    color: #efe9db;
+    font-size: var(--tamparra);
+    text-align: center;
+    font-family: var(--letramenu);
+    font-weight: bold;
+    cursor: pointer;
+}
+.botonreA:hover {
+    background-color: darkgoldenrod;
+    background-image: linear-gradient(to left, darkgoldenrod, #333);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: gold;
+}
+.imagenesenrec {
+    width: 10%; 
+    height: 10%;
+    margin-top: -5rem;
+}
+.inputA{
+    flex-direction: column;
+    color: #c4a36a;
+    background: transparent;
+    border: none;
+    border-bottom: .01rem solid white;
+    font-family: var(--letrasparaheader);
+    font-size: 1rem;
+    text-align: center;
+}

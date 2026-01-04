@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Bengali:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --letrasparaheader: "Chau Philomene One", serif;
+    --tamaletra: 1.5rem;
+    --letrasparrafos: "Noto Serif Bengali", serif;
+    --tamparra: 1.2rem;
+    --letramenu: "DM Sans", serif;
+    --tamprecio: 32px;
+    --letraparapromo: "Noto Serif Bengali", serif;
+    --colorletra: #f5f5fd
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-bottom: .2rem;
+    margin-top: 2rem;
+}
+.Cuadrados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 15px solid #2B2B2B;
+    border-radius: 30px;
+    width: 50rem;
+    height: 27rem;
+    background-color:#2B2B2B;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    margin: auto;
+    overflow: hidden; 
+}
+.Letrasencuadrados{
+    color: #efe9db;
+    text-align: center;
+    font-family: var(--letramenu);
+    font-size: 20.1px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.foto{
+    align-self: center;
+}
+.conte{
+    display: flex;
+    flex-direction: column;
+    
+}
+.botones{
+    display: flex;
+}
+
+button{
+    width: 10rem;
+    height: 5rem;
+    margin-top: 1rem;
+    text-align: center;
+    border: 5px solid transparent; 
+    border-radius: 2rem;
+    background-color: #c4a36a; 
+    background-origin: border-box; 
+    background-clip: content-box, border-box;
+    text-decoration: none;
+}
+.boton:hover {
+    background-color: darkgoldenrod; 
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.boton {
+    margin: 0; 
+    padding: .5rem; 
+    top: 1rem; 
+    color: black;
+    font-family: var(--letrasparaheader);
+    font-weight: 400;
+    font-size: var(--tamaletra);
+}
+input{
+    flex-direction: column;
+    color: #c4a36a;
+    background: transparent;
+    border: none;
+    border-bottom: .01rem solid white;
+    font-family: var(--letrasparaheader);
+    font-size: 1.4rem;
+    text-align: center;
+}
+

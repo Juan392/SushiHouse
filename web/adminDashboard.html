@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/stykesmenu.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="/web/index.html">
+                <img class="Logoinicio" src="../assets/logo_cropped-removebg-preview.png" alt="Logo">
+            </a>
+            <ul class="nav">
+                <li><button class="pagi" onclick="window.location.href='../web/carrito.html'" >HAZ TU PEDIDO</button></li>
+                <li><button class="pagi" onclick="window.location.href='../web/menu.html'">MENÚ</button></li>
+                <li><button class="pagi" onclick="window.location.href='../web/ubicaciones.html'">UBICACIONES</button></li>
+                <li><button class="pagi" onclick="window.location.href='../web/promociones.html'">PROMOCIONES</button></li>
+            </ul>
+            <a href="/web/perfil.html">
+                <img class="perfil" src="../assets/perfil.png" alt="Logo">
+            </a>
+        </nav>        
+    </header>
+    <main class="main">
+        <div class="header-line"></div>
+        <h1 class="nos">👑 Dashboard del Administrador</h1>
+
+    <!-- Formulario para agregar productos -->
+    <section class="contenedores">
+        <h2 class="sub">➕ Agregar Producto</h2>
+        <form id="formAgregarProducto" class="rectangulosA">
+            <input class="inputA" type="text" id="nombre" placeholder="Nombre" required />
+            <textarea class="inputA" id="descripcion" placeholder="Descripción" required></textarea>
+            <input class="inputA" type="number" id="precio" placeholder="Precio" required />
+            <input class="inputA" type="number" id="stock" placeholder="Stock" required />
+            <input class="inputA" type="text" id="categoria" placeholder="Categoría" required />
+            <input class="inputA" type="text" id="imagen" name="imagen" placeholder="URL de la imagen" required />
+            <div class="imagenesenrec" id="imagen_preview"></div>
+            <button type="submit" class="botonreA">Agregar Producto</button>
+        </form>
+        <p id="mensajeProducto" class="parrafoenrec"></p>
+    </section>
+
+    <!-- Formulario para agregar empleados -->
+    <section class="contenedores">
+        <h2 class="sub">👥 Agregar Empleado</h2>
+        <form id="formAgregarEmpleado" class="rectangulosA">
+            <input class="inputA" type="text" id="nombreEmpleado" placeholder="Nombre" required />
+            <input class="inputA" type="email" id="emailEmpleado" placeholder="Email" required />
+            <input class="inputA" type="password" id="passwordEmpleado" placeholder="Contraseña" required />
+            <input class="inputA" type="text" id="sueldo" placeholder="Sueldo" required />
+            <select class="inputA" id="rolEmpleado">
+                <option  value="empleado">Empleado</option>
+                <option  value="admin">Administrador</option>
+            </select>
+            <select class="inputA" id="puesto">
+                <option value="cocinero">Cocinero</option>
+                <option value="repartidor">Repartidor</option>
+                <option value="mesero">Mesero</option>
+                <option value="recepcion">Recepcion</option>
+            </select>
+            <button type="submit" class="botonreA">Agregar Empleado</button>
+        </form>
+            <p id="mensajeEmpleado" class="parrafoenrec"></p>
+    </section>
+        
+    <section class="contenedores">
+        <h2 class="sub">🎟️ Agregar Cupón</h2>
+        <form id="formAgregarCupon" class="rectangulosA">
+            <input class="inputA" type="text" id="titulo" placeholder="Título del cupón" required />
+            <textarea class="inputA" id="descripcionC" placeholder="Descripción del cupón" required></textarea>
+            <input class="inputA" type="url" id="imagen_url" placeholder="URL de la imagen" required />
+            <input class="inputA" type="date" id="fecha_expiracion" required />
+            <input class="inputA" type="number" id="descuento" placeholder="Descuento (%)" step="0.01" required />
+            <div class="imagenesenrec" id="imagen_preview_cupon"></div>
+            <button type="submit" class="botonreA">Agregar Cupón</button>
+        </form>
+        <p id="mensajeCupon" class="parrafoenrec"></p>
+    </section>
+    
+    
+        <div class="footerlinemenu"></div>
+
+        <div class="footenlaces">
+            <a class="Logosfoot" href="https://www.instagram.com">
+                <img class="imagenesfoot" src="../assets/2.png" alt="Insta Logo">
+            </a>
+            <a class="Logosfoot" href="https://www.facebook.com/?locale=es_LA">
+                <img class="imagenesfoot" src="../assets/1.png" alt="Logo de facebook">
+            </a>
+            <a class="Logosfoot" href="https://x.com">
+                <img class="imagenesfoot" src="../assets/3.png" alt="Logo de X">
+            </a>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <p class="footexto">© 2025 La Casa del Sushi. Todos los derechos reservados.</p>
+    </footer>
+        <script src="/scriipt/adminDashboard.js"></script>
+
+</body>
+</html>

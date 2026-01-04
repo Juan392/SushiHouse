@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Bengali:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --letrasparaheader: "Chau Philomene One", serif;
+    --tamaletra: 1.5rem;
+    --letrasparrafos: "Noto Serif Bengali", serif;
+    --tamparra: 1.2rem;
+    --letramenu: "DM Sans", serif;
+    --tamprecio: 32px;
+    --letraparapromo: "Noto Serif Bengali", serif;
+    --colorletra: #f5f5fd
+}
+form{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+.contenedorcontra{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-bottom: 4.8rem;
+    margin-top: 4.8rem;
+}
+.cuadrocontra{
+    display: flex;
+    flex-direction: column;
+    background-color: #2b2b2b;
+    gap: 1.2rem;
+    width: 30rem;
+    height: 23.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorcontra .cuadrocontra input{
+    width: 70%;
+    height: 50%;
+    color: #c4a36a;
+    background: transparent;
+    border: none;
+    border-bottom: .01rem solid white;
+    margin-bottom: 1rem;
+    font-family: var(--letrasparaheader);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.contenedorcontra .cuadrocontra input[type = 'submit']{
+    background-color: #000;
+    border: none;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.botoncarro{
+    width: 10rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    height: 10rem;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: #000;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+.botoncarro:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+.textoboton{
+    color: #c4a36a;
+    font-size: var(--tamparra);
+    text-align: center;
+    margin-top: 7%;
+    font-family: var(--letramenu);
+    font-weight: bold;
+    text-decoration: none;
+}
+

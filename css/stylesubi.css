@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Bengali:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --letrasparaheader: "Chau Philomene One", serif;
+    --tamaletra: 1.5rem;
+    --letrasparrafos: "Noto Serif Bengali", serif;
+    --tamparra: 1.2rem;
+    --letramenu: "DM Sans", serif;
+    --tamprecio: 32px;
+    --letraparapromo: "Noto Serif Bengali", serif;
+    --colorletra: #f5f5fd
+}
+
+.contenedorpre{
+    margin-top: 2rem;
+}
+.cuadropre{
+    display: flex;
+    flex-direction: column;
+    width: 65rem;
+    border: .5rem solid #f5f5f510;
+    background: #f5f5f590;
+    justify-content: flex-start;
+    margin: auto;
+    overflow: hidden;
+    gap: .8rem;
+    align-items: center;
+}
+.cuadropre1{
+    display: flex;
+    flex-direction: column;
+    width: 45rem;
+    border: .5rem solid #f5f5f510;
+    background: #f5f5f590;
+    justify-content: flex-start;
+    margin: auto;
+    overflow: hidden;
+    gap: .8rem;
+    align-items: center;
+}
+
+.parencua{
+    font-family: "Montserrat", serif;
+    font-weight: bolder;
+    font-size: 4rem;
+    padding: 0%;
+    margin: 0%;
+}
+
+.contenedorubi{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-bottom: 5%;
+    margin-top: 4rem;
+    gap: 4rem;
+}
+.cuadradoubi{
+    display: flex;
+    flex-direction: column;
+    height: 18rem;
+    width: 25rem;
+    border: .5rem solid #2b2b2b;
+    background-color: #2b2b2b;
+    border-radius: 1rem;
+    justify-content: flex-start;
+    margin: auto;
+    overflow: hidden;
+    gap: .8rem;
+}
+.sububi{
+    margin-top: .2rem;
+    color:#c4a36a;
+    font-family: var(--letrasparrafos);
+    font-size: 1.5rem;
+}
+.subnor{
+    margin-top: -.2rem;
+    color: var(--colorletra);
+    font-family: var(--letrasparrafos);
+}
+#ubi{
+    text-align: center;
+    font-weight: bold;
+    margin-top: .2rem;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/stylespromo.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="/web/index.html">
+                <img class="Logoinicio" src="../assets/logo_cropped-removebg-preview.png" alt="Logo">
+            </a>
+            <ul class="nav">
+                <li><button class="pagi" onclick="window.location.href='../web/carrito.html'" >HAZ TU PEDIDO</button></li>
+                <li><button class="pagi" onclick="window.location.href='../web/menu.html'">MENÚ</button></li>
+                <li><button class="pagi" onclick="window.location.href='../web/ubicaciones.html'">UBICACIONES</button></li>
+                <li><button class="pagi" onclick="window.location.href='../web/promociones.html'">PROMOCIONES</button></li>
+            </ul>
+            <a href="/web/perfil.html">
+                <img class="perfil" src="../assets/perfil.png" alt="Logo">
+            </a>
+        </nav>       
+    </header>
+    <main class="main">
+        <div class="header-line"></div>
+        <h1 class="nos">Adivina el número del 1 al 10 y gana un descuento</h1>
+        <input class="input" type="number" id="numeroUsuario" placeholder="Ingresa un número">
+        <button class="botonintento" id="boton" onclick="calcular();">INTENTAR</button>
+        <div id="resultado" class="hidden">
+            <div class="container">
+                <div class="carta">
+                    <p id="mensaje"></p>
+                </div>
+            </div>
+        </div>
+        <div class="contenedorrec" id="descuentosGrid"></div>
+        <div class="footerlinemenu"></div>
+        <div class="footenlaces">
+            <a class="Logosfoot" href="https://www.instagram.com">
+                <img class="imagenesfoot" src="../assets/2.png" alt="Insta Logo">
+            </a>
+            <a class="Logosfoot" href="https://www.facebook.com/?locale=es_LA">
+                <img class="imagenesfoot" src="../assets/1.png" alt="Logo de facebook">
+            </a>
+            <a class="Logosfoot" href="https://x.com">
+                <img class="imagenesfoot" src="../assets/3.png" alt="Logo de X">
+            </a>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footexto">© 2025 La Casa del Sushi. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="../scriipt/promociones.js"></script>
+
+    
+</body>
+</html>

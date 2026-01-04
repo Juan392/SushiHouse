@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/stylescarrito.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="/web/index.html">
+                <img class="Logoinicio" src="../assets/logo_cropped-removebg-preview.png" alt="Logo">
+            </a>
+            <ul class="nav">
+                <li><button class="pagi" onclick="window.location.href='../web/carrito.html'" >HAZ TU PEDIDO</button></li>
+                <li><button class="pagi" onclick="window.location.href='../web/menu.html'">MENÚ</button></li>
+                <li><button class="pagi" onclick="window.location.href='../web/ubicaciones.html'">UBICACIONES</button></li>
+                <li><button class="pagi" onclick="window.location.href='../web/promociones.html'">PROMOCIONES</button></li>
+            </ul>
+            <a href="/web/perfil.html">
+                <img class="perfil" src="../assets/perfil.png" alt="Perfil">
+            </a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="header-line"></div>
+
+        <section id="carritoSection" class="contenedor">
+            <h2>🛒 Carrito de Compras</h2>
+            <div id="carritoContainer"></div>
+            <div id="totalCarrito" class="precio-total">🛒 Total: $0.00</div>
+            <div id="descuentoAplicado" class="descuento-total"></div>
+            <div class="botones">
+                <button id="vaciarCarrito" class="botoncarro"><p class="textoboton">Vaciar Carrito</p></button>
+                <button id="realizarPedido" class="botoncarro"><p class="textoboton">Realizar Pedido</p></button>
+            </div>
+        </section>
+
+        <div class="footerlinemenu"></div>
+        <div class="footenlaces">
+            <a class="Logosfoot" href="https://www.instagram.com">
+                <img class="imagenesfoot" src="../assets/2.png" alt="Insta Logo">
+            </a>
+            <a class="Logosfoot" href="https://www.facebook.com/?locale=es_LA">
+                <img class="imagenesfoot" src="../assets/1.png" alt="Logo de facebook">
+            </a>
+            <a class="Logosfoot" href="https://x.com">
+                <img class="imagenesfoot" src="../assets/3.png" alt="Logo de X">
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footexto">© 2025 La Casa del Sushi. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../scriipt/carrito.js"></script>
+</body>
+</html>

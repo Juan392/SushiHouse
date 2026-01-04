@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/stylesperfil.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="/web/index.html">
+                <img class="Logoinicio" src="../assets/logo_cropped-removebg-preview.png" alt="Logo">
+            </a>
+            <ul class="nav">
+                <li><button class="pagi" onclick="window.location.href='../web/carrito.html'" >HAZ TU PEDIDO</button></li>
+                <li><button class="pagi" onclick="window.location.href='../web/menu.html'">MENÚ</button></li>
+                <li><button class="pagi" onclick="window.location.href='../web/ubicaciones.html'">UBICACIONES</button></li>
+                <li><button class="pagi" onclick="window.location.href='../web/promociones.html'">PROMOCIONES</button></li>
+            </ul>
+            <a href="/web/perfil.html">
+                <img class="perfil" src="../assets/perfil.png" alt="Logo">
+            </a>
+        </nav>    
+    </header>
+
+    <main class="main">
+        <div class="header-line"></div>
+
+   <!-- Sección para USUARIO -->
+   <section id="usuarioSection" class="contenedor" style="display: none;">
+    <div class="Cuadrados">
+        <div class="foto">
+            <label for="uploadProfileImage">
+                <img id="profileImage" src="../assets/perfil.png" alt="Foto de perfil" width="150">
+            </label>
+            <input type="file" id="uploadProfileImage" accept="image/*" style="display: none;">
+        </div>
+        <div class="conte">
+            <p class="Letrasencuadrados">Nombre: <span id="userName"></span></p>
+            <p class="Letrasencuadrados">Correo electrónico: <span id="userEmail"></span></p>
+            <p class="Letrasencuadrados"><span id="userRole"></span></p>
+            <p class="Letrasencuadrados">Dirección: <span id="userAddress"></span></p>
+            <input type="text" id="addressInput" style="display: none;">
+        </div>
+        <div class="botones">
+            <button id="editAddressButton" class="boton">Editar Dirección</button>
+            <button id="saveAddressButton" class="boton" style="display: none;">Guardar</button>
+            <button id="logoutButton" class="boton">Cerrar Sesión</button>
+        </div>
+    </div>
+</section>
+
+<!-- Sección para ADMIN -->
+<section id="adminSection" class="contenedor" style="display: none;">
+    <div class="Cuadrados">
+        <div class="foto">
+            <label for="uploadProfileImageAdmin">
+                <img id="profileImageAdmin" src="../assets/perfil.png" alt="Foto de perfil admin" width="150">
+            </label>
+            <input type="file" id="uploadProfileImageAdmin" accept="image/*" style="display: none;">
+        </div>
+        <div class="conte">
+            <p class="Letrasencuadrados">Nombre: <span id="adminName"></span></p>
+            <p class="Letrasencuadrados">Correo electrónico: <span id="adminEmail"></span></p>
+            <p class="Letrasencuadrados"><span id="adminRole"></span></p>
+            <p class="Letrasencuadrados">Panel de administración disponible</p>
+        </div>
+        <div class="botones">
+            <button id="adminDashboardButton" class="boton">Ir al Panel</button>
+            <button id="logoutButtonAdmin" class="boton">Cerrar Sesión</button>
+        </div>
+    </div>
+</section>
+
+<!-- Sección para EMPLEADO -->
+<section id="empleadoSection" class="contenedor" style="display: none;">
+    <div class="Cuadrados">
+        <div class="foto">
+            <label for="uploadProfileImageEmpleado">
+                <img id="profileImageEmpleado" src="../assets/perfil.png" alt="Foto de perfil empleado" width="150">
+            </label>
+            <input type="file" id="uploadProfileImageEmpleado" accept="image/*" style="display: none;">
+        </div>
+        <div class="conte">
+            <p class="Letrasencuadrados">Nombre: <span id="empleadoName"></span></p>
+            <p class="Letrasencuadrados">Correo electrónico: <span id="empleadoEmail"></span></p>
+            <p class="Letrasencuadrados"><span id="empleadoRole"></span></p>
+            <p class="Letrasencuadrados">Área de trabajo asignada</p>
+        </div>
+        <div class="botones">
+            <button id="empleadoTasksButton" class="boton">Ver Tareas</button>
+            <button id="logoutButtonEmpleado" class="boton">Cerrar Sesión</button>
+        </div>
+    </div>
+</section>
+
+
+
+        <div class="footerlinemenu"></div>
+        <div class="footenlaces">
+            <a class="Logosfoot" href="https://www.instagram.com">
+                <img class="imagenesfoot" src="../assets/2.png" alt="Insta Logo">
+            </a>
+            <a class="Logosfoot" href="https://www.facebook.com/?locale=es_LA">
+                <img class="imagenesfoot" src="../assets/1.png" alt="Logo de Facebook">
+            </a>
+            <a class="Logosfoot" href="https://x.com">
+                <img class="imagenesfoot" src="../assets/3.png" alt="Logo de X">
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footexto">© 2025 La Casa del Sushi. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../scriipt/perfil.js"></script>
+</body>
+</html>
